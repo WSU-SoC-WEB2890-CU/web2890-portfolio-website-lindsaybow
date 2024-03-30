@@ -1,3 +1,155 @@
-/* Your styles go here */
+// variables
+
+$primary: #f6f0e1;
+$secondary: #B4CBB9;
+$success: #EBA076;
+$info: #f2ba3b;
+$warning: #B4CBB9;
+$danger: #e2dbc6;
+
+// fonts
+
+h1, h2, h3, h4, h5{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+
+p, a, ul, li, form, .btn{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+
+// buttons
+
+
+
+// universal
+
+body{
+    min-height: 100vh;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+// states
+
+.active{
+    border-bottom: 5px solid #FAD787;
+}
+
+.dropdown-menu > li > a:hover{
+    background-image: none;
+    background-color: $secondary;
+    border-radius: 20px;
+}
+
+// recent projects
+
+.ip{
+    background-color: $secondary;
+    background-size: 100%;
+    height: 250px;
+    border: 2px solid black;
+}
+
+.hmc{
+    background-image: url(../images/hmc.png);
+    background-size: 100%;
+    height: 250px;
+    border: 2px solid black;
+}
+
+.cardeal{
+    background-image: url(../images/cardeal.png);
+    background-size: 100%;
+    height: 250px;
+    border: 2px solid black;
+}
+
+.ww{
+    background-image: url(../images/ww.png);
+    background-size: 100%;
+    height: 250px;
+    border: 2px solid black;
+}
+
+.hmc > a, .cardeal > a, .ww > a{
+    background-color: $secondary;
+    border: 3px solid black;
+    text-decoration: none;
+    color: black;
+    border-radius: 50px;
+}
+
+.hmc > a:hover, .cardeal > a:hover, .ww > a:hover{
+    color: white;
+    transform: scale(1.09);
+    transition: background-color .5s;
+    transition: color .5s;
+    background-color: #37776c;
+}
+
+.hmc:hover, .cardeal:hover, .ww:hover{
+    transform: scale(1.05);
+}
+
+
+
+// hero
+
+.hero{
+    background-image: linear-gradient($danger .1em, transparent .1em), linear-gradient(90deg, $danger .1em, transparent .1em);
+    background-size: 2em 2em;
+    height: 100%;
+    width: 100vw !important;
+}
+
+.hero > div > p{
+    background-color: $secondary;
+    border: 3px solid black;
+    width: 1em 1em;
+}
+
+
+// footer
+
+
+
+
+
+
+
+
+// media queries
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    h1, h2, h3, h4, h5{
+        text-align: center;
+    }
+    p{
+        margin: 2rem;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {}
+
+
+//imports
+
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
