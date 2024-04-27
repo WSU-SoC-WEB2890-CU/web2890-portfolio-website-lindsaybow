@@ -3,25 +3,117 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Portfolio website</title>
+  <title>Lindsay Bowman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
-  <meta name="description" content="TODO: Portfolio website ...">
+  <meta name="description" content="Lindsay Bowman's Portfolio Website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./stylesheets/main.scss">
 </head>
 
-<body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Portfolio Website
-  </h1>
+<body class="bg-primary">
+
+  <!--navigation-->
+  <nav class="navbar nav nav-underline navbar-light navbar-expand-md p-5">
+    <div class="container-fluid col-lg-10 col-xxl-8">
+      <a class="navbar-brand active fw-bold" href="index.html">lindsay bowman</a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list-nested"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0 text-end">
+          <li class="nav-item dropdown mx-3">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu bg-primary border-danger border-2 p-3 text-end">
+              <li><a class="dropdown-item fw-bold" href="casestudy.html">Wildflower Weddings Case Study</a></li>
+              <li><a class="dropdown-item fw-bold" href="hmc.html">HMC Home & Marine Redesign</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">A11y Site</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Matcha Made in Heaven</a></li>
+              <li><a class="dropdown-item fw-bold" href="cardeal.html">Cardeal</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--hero-->
+  <section class="hero container-fluid d-flex flex-row justify-content-center p-5">
+    <div class="my-auto d-flex flex-row flex-wrap justify-content-center align-items-center pb-5">
+      <div class="d-flex flex-column align-items-center m-3">
+        <h1 class="fw-bold pt-5">lindsay bowman</h1>
+        <a href="about.html"><button class="btn btn-success btn-lg m-3 fw-bold border-dark border-3 rounded-pill text-nowrap">about me</button></a>
+      </div>
+      <p class="fw-bold fs-2 mx-5 p-5 pb-5 text-nowrap">UX/UI Designer</p>
+    </div>
+  </section>
+
+  <!--main-->
+  <main class="pt-5">
+    <section class="container col-md-8 col-lg-6 pt-5 pb-5">
+      <h2 class="fw-bold">Wildflower Weddings Case Study</h2>
+      <p class="pb-5 col-xxl-10">An case study on my project: Wildflower Weddings, where my role was a one-man show&#8212;from research and design all the way to development. Wildflower Weddings is a wedding photography service focused on tailoring to the specific needs and desires of the user through the creation of custom photography bundles.</p>
+      <div class="d-flex flex-row flex-wrap align-items-center justify-content-center">
+        <img src="images/wwmacbook.svg" alt="" class="col-sm-12 col-md-8 pb-4" width="100%">
+        <a href="casestudy.html"><button class="btn btn-success btn-lg h-100 m-3 fw-bold border-dark border-3 rounded-pill text-nowrap w-responsive">view case study</button></a>
+      </div>
+    </section>
+
+    <section class="container col-md-10 col-lg-10 pt-5 p-5">
+      <h2 class="fw-bold pb-4">Recent Projects</h2>
+      <div class="row d-flex flex-row align-items-center justify-content-center">
+        <div class="ip m-1 col-lg-5 d-flex flex-row align-items-center justify-content-center">
+            <p class="text-center fs-4 p-3">Matcha Made in Heaven (under construction)</p>
+        </div>
+        <div class="ip m-1 col-lg-5 d-flex flex-row align-items-center justify-content-center">
+          <p class="text-center fs-4 p-3">A11y Site (under construction)</p>
+        </div>
+      </div>
+      <div class="row d-flex flex-row align-items-center justify-content-center">
+        <div class="hmc m-1 col-lg-5 d-flex flex-row align-items-center justify-content-center">
+            <a href="hmc.html" class="text-center fs-4 p-3">HMC Redesign</a>
+        </div>
+        <div class="cardeal m-1 col-lg-5 d-flex flex-row align-items-center justify-content-center">
+          <a href="cardeal.html" class="text-center fs-4 p-3">Cardeal</a>
+        </div>
+      </div>
+      <div class="row d-flex flex-row align-items-center justify-content-center">
+        <div class="ww m-1 col-lg-5 d-flex flex-row align-items-center justify-content-center">
+            <a href="casestudy.html" class="text-center fs-4 p-3">Wildflower Weddings</a>
+        </div>
+        
+      </div>
+    </section>
+
+  </main>
+
+  <aside class="container text-center p-5">
+    <p class="fs-4 fw-bold">Let's get in touch!</p>
+    <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin m-2 text-dark"></i></a>
+    <a href="mailto:lindsay@lump.net" target="_blank"><i class="bi bi-envelope m-2 text-dark"></i></a>
+    <a href="Lindsay Bowman-Resume.pdf" target="_blank"><i class="bi bi-file-earmark-person m-2 text-dark"></i></a>
+  </aside>
+
+  <!--footer-->
+  <footer class="container-fluid text-center bg-secondary p-5">
+    <div class="row align-items-center">
+      <p class="col fw-bold">&copy; Copyright 2024 All Rights Reserved</p>
+    </div>
+  </footer>
 
   <script type="module" src="./javascripts/main.js"></script>
 </body>
